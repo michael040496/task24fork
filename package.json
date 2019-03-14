@@ -1,0 +1,17 @@
+{
+  "name": "task24",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Task24.js",
+  "scripts": {
+    "start": "nodemon Task24.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10",
+    "pug": "^2.0.3"
+  }
+}

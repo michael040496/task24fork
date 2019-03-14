@@ -1,0 +1,105 @@
+{
+    "firstName": "",
+    "lastName": "",
+    "dob": "",
+    "address": {
+      "streetAddress": "",
+      "postNumber": "",
+      "city": "",  
+      "country": ""
+    },
+    
+    "e-mail": "",
+    
+    "contactNumber": "",
+    
+    "summary": "",
+    
+    "education":[
+        {"degree": "",
+        "institution": "",
+        "startDate": "",
+        "endDate": "",
+        "city": "",
+        "country": "",
+        "information": ""
+      }
+    ],
+    
+    "qualifications": [],
+      
+     "projectExperience":[ 
+       {"role": "",
+        "employer": "",
+        "startDate": "",
+        "endDate": "",
+        "city": "",
+        "country": "",
+        "information": ""
+       }
+      ],
+      
+      "workExperience":[ 
+       {"role": "",
+        "employer": "",
+        "startDate": "",
+        "endDate": "",
+        "city": "",
+        "country": "",
+        "information": ""
+       }
+      ],
+      
+    
+    
+    "certifications": [
+        {"name": "",
+        "completed": "false",
+        "date": "",
+        "organizer": "",
+        "description": ""
+        }
+      ],
+    
+    "volunteerWork":[
+      {"role": "",
+        "organization": "",
+        "startDate": "",
+        "endDate": "",
+        "city": "",
+        "country": "",
+        "information": ""
+       }
+      ],
+    
+    "languages":[
+      {
+        "language": "",
+        "proficiency": ""
+      }
+      ],
+    
+    "references": [
+      {
+       "firstName": "",
+       "lastName": "",
+       "contactInformation": "" 
+      }
+      
+      
+      ],
+    
+    "developerProfiles": [
+      {
+        "name": "",
+        "link": ""
+      }
+      ],
+    
+    "additionalInformation": [
+      {
+        "information": ""
+      }
+      ]
+    
+    }
