@@ -39,8 +39,9 @@
     ],
     
     "qualifications": "Java, Javascript, Python, UML, HTML, CSS, Git, IntelliJ, Eclipse, Apache Maven, Scrum, Jira, Trello, Spring Framework, Spring Boot, Bootstrap 4, REST, Microservices, jQuery, ReactJS, AngularJS, NodeJS, JDBC, Deployment, JDBC, JNLP, WGAG 2.0, TDD, DevOps, Kanban",
-      
-     "projectExperience":[ 
+    
+
+    "projectExperience":[ 
        {"role": "ansvar",
         "employer": "disney",
         "startDate": "January 2000",
@@ -51,7 +52,7 @@
        }
       ],
       
-      "workExperience":[ 
+    "workExperience":[ 
        {"role": "Arbeider",
         "employer": "Disney",
         "startDate": "January 2000",
@@ -112,18 +113,21 @@
 
       "developerProfiles": {
         "linkedin": [
-            {
-              "name": "LinkedIn", 
-              "link": "https://www.linkedin.com/in/heleneharmens/"
-            }
-        ],
-        "github": [
-            {
-              "name":"GitHub", 
-              "link":"https://github.com/michael040496"
-            }
-        ]
-    },
+          { "name": "LinkedIn", "link": "https://www.linkedin.com/in/heleneharmens/" }
+          ],
+          "github": [
+              { "name":"GitHub", "link": "https://github.com/michael040496" }
+          ],
+          "homepage": [
+              { "name":"Homepage", "link":"https://github.com/michael040496" }
+          ],
+          "imdb": [
+              { "name":"Imdb", "link":"https://github.com/michael040496" }
+          ],
+          "vimeo": [
+              { "name":"Vimeo", "link":"https://github.com/michael040496" }
+          ]
+      },
     
     "additionalInformation": [
       {
