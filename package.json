@@ -11,6 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "handlebar": "^1.0.0",
+    "handlebars": "^4.1.0",
+    "hbs": "^4.0.3",
     "material-components-web": "^1.0.1",
     "materialize-css": "^1.0.0-rc.2",
     "nodemon": "^1.18.10",

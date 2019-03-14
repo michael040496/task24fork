@@ -2,17 +2,25 @@ const express = require('express')
 const fs = require('fs')
 const path = require('path')
 const app = express()
+const hb = require('handlebars');
 const port = 8080
 
-let rawData = fs.readFileSync("data.json");
-const data = JSON.parse(rawData);
+const data = require('./data.json')
 
-app.get('/data', (req, res) => res.send(data));
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
+
+app.use(express.static(path.join(__dirname ,'Public')));
+
+app.get('/data', (req, res) => res.json(data));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/index.html'))
+   res.render('index',{ 'data' : data});
 });
 
+
 app.listen(process.env.PORT || 8080)
+
+
 
 
