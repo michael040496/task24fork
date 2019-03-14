@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "material-components-web": "^1.0.1",
+    "materialize-css": "^1.0.0-rc.2",
     "nodemon": "^1.18.10",
     "pug": "^2.0.3"
   }
