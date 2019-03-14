@@ -3,61 +3,80 @@
     "lastName": "Norman",
     "dob": "04.04.1996",
     "address": {
-      "streetAddress": "Veien",
-      "postNumber": "0000",
+      "streetAddress": "Veiengaten 1A",
+      "postNumber": "0123",
       "city": "Oslo",  
       "country": "Norge"
     },
     
     "e-mail": "ola.norman@gmail.com",
     
-    "contactNumber": "11111111",
+    "contactNumber": "+47 98765432",
     
-    "headline": "lorem ipsum",
+    "headline": "Ola is a fullstack Java developer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
 
     "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     
     "education":[
-        {"degree": "Bachelor",
-        "institution": "UiO",
-        "startDate": "01.01.01",
-        "endDate": "02.02.02",
+      {
+        "degree": "Master in Computer Science",
+        "institution": "Norwegian School of Information Technology",
+        "startDate": "January 2000",
+        "endDate": "December 2000",
         "city": "Oslo",
         "country": "Norge",
-        "information": "Infromatikk: noe"
+        "information": "Infromatikk: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+      },
+      {
+        "degree": "Bachelor in Computer Science",
+        "institution": "UiO",
+        "startDate": "January 2000",
+        "endDate": "December 2000",
+        "city": "Oslo",
+        "country": "Norge",
+        "information": "Infromatikk: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
       }
     ],
     
-    "qualifications": [],
+    "qualifications": "Java, Javascript, Python, UML, HTML, CSS, Git, IntelliJ, Eclipse, Apache Maven, Scrum, Jira, Trello, Spring Framework, Spring Boot, Bootstrap 4, REST, Microservices, jQuery, ReactJS, AngularJS, NodeJS, JDBC, Deployment, JDBC, JNLP, WGAG 2.0, TDD, DevOps, Kanban",
       
      "projectExperience":[ 
        {"role": "ansvar",
         "employer": "disney",
-        "startDate": "01.01.01",
-        "endDate": "02.02.02",
+        "startDate": "January 2000",
+        "endDate": "December 2000",
         "city": "Oslo",
         "country": "Norge",
-        "information": "lorem ipsum"
+        "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
        }
       ],
       
       "workExperience":[ 
-       {"role": "ansvar",
-        "employer": "disney",
-        "startDate": "01.01.01",
-        "endDate": "02.02.02",
+       {"role": "Arbeider",
+        "employer": "Disney",
+        "startDate": "January 2000",
+        "endDate": "December 2000",
         "city": "Oslo",
         "country": "Norge",
-        "information": "lorem ipsum"
+        "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+       },
+
+       {"role": "Sjef",
+        "employer": "Disney",
+        "startDate": "January 2000",
+        "endDate": "December 2000",
+        "city": "Oslo",
+        "country": "Norge",
+        "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
        }
       ],
       
     
     
     "certifications": [
-        {"name": "oca",
+        {"name": "Oracle Certified Associate, Java SE 8 Programmer I",
         "completed": "false",
-        "date": "01.01.01",
+        "date": "April 2019",
         "organizer": "glasspaper",
         "description": "java"
         }
@@ -66,8 +85,8 @@
     "volunteerWork":[
       {"role": "noe",
         "organization": "disney",
-        "startDate": "0101010",
-        "endDate": "020202",
+        "startDate": "January 2000",
+        "endDate": "December 2000",
         "city": "oslo",
         "country": "norge",
         "information": "lorem ipsum"
@@ -90,13 +109,21 @@
       
       
       ],
-    
-    "developerProfiles": [
-      {
-        "name": "github",
-        "link": "https://github.com/michael040496"
-      }
-      ],
+
+      "developerProfiles": {
+        "linkedin": [
+            {
+              "name": "LinkedIn", 
+              "link": "https://www.linkedin.com/in/heleneharmens/"
+            }
+        ],
+        "github": [
+            {
+              "name":"GitHub", 
+              "link":"https://github.com/michael040496"
+            }
+        ]
+    },
     
     "additionalInformation": [
       {
