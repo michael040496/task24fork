@@ -4,11 +4,11 @@
   "dob": "04.04.1996",
   "e-mail": "ola.norman@gmail.com",
   "contactNumber": "+47 98765432",
-  "picture":"tempProfile.jpg",
-  "pageNavColorTheme": "blue",
-  "pageTextColorTheme": "purple",
-  "pageLinkColorTheme": "blue",
-  "pageIconColorTheme": "blue",
+  "picture":"Mike.jpg",
+  "pageNavColorTheme": "green",
+  "pageTextColorTheme": "orange",
+  "pageLinkColorTheme": "green",
+  "pageIconColorTheme": "green",
 
   "address": {
     "streetAddress": "Veiengaten 1A",
