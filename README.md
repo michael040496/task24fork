@@ -1,4 +1,4 @@
-# Task 2 4#
+# Task 24 #
 ## CV/Resume website ##
 ### Michael Dejene Kifle & Helene Hunding Harmens ###
 
