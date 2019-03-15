@@ -1,138 +1,143 @@
 {
-    "firstName": "Ola",
-    "lastName": "Norman",
-    "dob": "04.04.1996",
-    "address": {
-      "streetAddress": "Veiengaten 1A",
-      "postNumber": "0123",
-      "city": "Oslo",  
-      "country": "Norge"
+  "firstName": "Ola",
+  "lastName": "Normann",
+  "dob": "04.04.1996",
+  "e-mail": "ola.norman@gmail.com",
+  "contactNumber": "+47 98765432",
+  "picture":"tempProfile.jpg",
+  "pageNavColorTheme": "blue",
+  "pageTextColorTheme": "purple",
+  "pageLinkColorTheme": "blue",
+  "pageIconColorTheme": "blue",
+
+  "address": {
+    "streetAddress": "Veiengaten 1A",
+    "postNumber": "0123",
+    "city": "Oslo",  
+    "country": "Norway"
+  },
+
+  "headline": "Ola is a fullstack Java developer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+  "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    
+  "education":[
+    {
+      "degree": "Master in Computer Science",
+      "level": "Master",
+      "institution": "Norwegian School of Information Technology",
+      "startDate": "January 2000",
+      "endDate": "December 2000",
+      "city": "Oslo",
+      "country": "Norway",
+      "information": "Infromatikk: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
     },
-    
-    "e-mail": "ola.norman@gmail.com",
-    
-    "contactNumber": "+47 98765432",
-    
-    "headline": "Ola is a fullstack Java developer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    
-    "education":[
-      {
-        "degree": "Master in Computer Science",
-        "institution": "Norwegian School of Information Technology",
-        "startDate": "January 2000",
-        "endDate": "December 2000",
-        "city": "Oslo",
-        "country": "Norge",
-        "information": "Infromatikk: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-      },
-      {
-        "degree": "Bachelor in Computer Science",
-        "institution": "UiO",
-        "startDate": "January 2000",
-        "endDate": "December 2000",
-        "city": "Oslo",
-        "country": "Norge",
-        "information": "Infromatikk: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-      }
-    ],
-    
-    "qualifications": "Java, Javascript, Python, UML, HTML, CSS, Git, IntelliJ, Eclipse, Apache Maven, Scrum, Jira, Trello, Spring Framework, Spring Boot, Bootstrap 4, REST, Microservices, jQuery, ReactJS, AngularJS, NodeJS, JDBC, Deployment, JDBC, JNLP, WGAG 2.0, TDD, DevOps, Kanban",
-    
-
-    "projectExperience":[ 
-       {"role": "ansvar",
-        "employer": "disney",
-        "startDate": "January 2000",
-        "endDate": "December 2000",
-        "city": "Oslo",
-        "country": "Norge",
-        "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-       }
-      ],
-      
-    "workExperience":[ 
-       {"role": "Arbeider",
-        "employer": "Disney",
-        "startDate": "January 2000",
-        "endDate": "December 2000",
-        "city": "Oslo",
-        "country": "Norge",
-        "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-       },
-
-       {"role": "Sjef",
-        "employer": "Disney",
-        "startDate": "January 2000",
-        "endDate": "December 2000",
-        "city": "Oslo",
-        "country": "Norge",
-        "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-       }
-      ],
-      
-    
-    
-    "certifications": [
-        {"name": "Oracle Certified Associate, Java SE 8 Programmer I",
-        "completed": "false",
-        "date": "April 2019",
-        "organizer": "glasspaper",
-        "description": "java"
-        }
-      ],
-    
-    "volunteerWork":[
-      {"role": "noe",
-        "organization": "disney",
-        "startDate": "January 2000",
-        "endDate": "December 2000",
-        "city": "oslo",
-        "country": "norge",
-        "information": "lorem ipsum"
-       }
-      ],
-    
-    "languages":[
-      {
-        "language": "norsk",
-        "proficiency": "ok"
-      }
-      ],
-    
-    "references": [
-      {
-       "firstName": "craig",
-       "lastName": "marais",
-       "contactInformation": "email" 
-      }
-      
-      
-      ],
-
-      "developerProfiles": {
-        "linkedin": [
-          { "name": "LinkedIn", "link": "https://www.linkedin.com/in/heleneharmens/" }
-          ],
-          "github": [
-              { "name":"GitHub", "link": "https://github.com/michael040496" }
-          ],
-          "homepage": [
-              { "name":"Homepage", "link":"https://github.com/michael040496" }
-          ],
-          "imdb": [
-              { "name":"Imdb", "link":"https://github.com/michael040496" }
-          ],
-          "vimeo": [
-              { "name":"Vimeo", "link":"https://github.com/michael040496" }
-          ]
-      },
-    
-    "additionalInformation": [
-      {
-        "information": "nothing"
-      }
-      ]
-    
+    {
+      "degree": "Bachelor in Computer Science",
+      "level": "Bachelor",
+      "institution": "UiO",
+      "startDate": "January 2000",
+      "endDate": "December 2000",
+      "city": "Oslo",
+      "country": "Norway",
+      "information": "Infromatikk: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
     }
+  ],
+    
+  "keyQualifications": "Java, Javascript, Python, UML, HTML, CSS, Git, IntelliJ, Eclipse, Apache Maven, Scrum, Jira, Trello, Spring Framework, Spring Boot, Bootstrap 4, REST, Microservices, jQuery, ReactJS, AngularJS, NodeJS, JDBC, Deployment, JDBC, JNLP, WGAG 2.0, TDD, DevOps, Kanban",
+  "otherQualifications": "3D, VFX, Photoshop",
+      
+  "experience":[ 
+    {
+      "role": "Worker",
+      "employer": "Disney",
+      "type": "Work Experience",
+      "startDate": "January 2000",
+      "endDate": "December 2000",
+      "city": "Oslo",
+      "country": "Norway",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+
+    {
+      "role": "Boss",
+      "employer": "Experis Academy",
+      "type": "Work Experience",
+      "startDate": "January 2000",
+      "endDate": "December 2000",
+      "city": "Oslo",
+      "country": "Norway",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  ],
+      
+  "otherEngagements":[
+    {
+      "role": "Organizator",
+      "organization": "Experis Academy",
+      "type": "Voluntary",
+      "startDate": "January 2000",
+      "endDate": "December 2000",
+      "city": "oslo",
+      "country": "Norway",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  ],
+    
+  "certificationsAndAwards": [
+    {
+      "type": "Certification",
+      "name": "Oracle Certified Associate, Java SE 8 Programmer I",
+      "completed": "Not yet completed",
+      "date": "April 2019",
+      "organizer": "Glasspaper"
+    },
+    {
+      "type": "Award",
+      "name": "Best Person Ever",
+      "completed": "Completed",
+      "date": "April 2019",
+      "organizer": "Experis Academy"
+    }
+  ],
+  
+    
+  "languages":[
+    {
+      "language": "Norsk",
+      "proficiency": "Good"
+    },
+    {
+      "language": "Engelsk",
+      "proficiency": "Good"
+    }
+  ],
+    
+  "references": [
+    {
+      "firstName": "Craig",
+      "lastName": "Marais",
+      "contactInformation": "email" 
+    }
+  ],
+
+  "developerProfiles": [
+    { "name": "LinkedIn", "link": "https://www.linkedin.com/in/heleneharmens/", "icon":"fab fa-linkedin-in" },
+    { "name": "GitHub", "link": "https://github.com/michael040496", "icon":"fab fa-github" },
+    { "name": "Homepage", "link":"https://github.com/michael040496", "icon":"fab fa-ad" },
+    { "name": "Imdb", "link":"https://github.com/michael040496", "icon":"fab fa-imdb" },
+    { "name": "Vimeo", "link":"https://github.com/michael040496", "icon":"fab fa-vimeo" }
+  ],  
+
+      
+  "tools": [
+    {"name": "Java", "icon": "fab fa-java"},
+    {"name": "HTML5", "icon": "fab fa-html5"},
+    {"name": "CSS3", "icon": "fab fa-css3-alt"},
+    {"name": "Angular", "icon": "fab fa-angular"},
+    {"name": "React", "icon": "fab fa-react"},
+    {"name": "JavaScript", "icon": "fab fa-js"},
+    {"name": "Node", "icon": "fab fa-node-js"},
+    {"name": "NPM", "icon": "fab fa-npm"}
+  ]
+    
+}

@@ -2,7 +2,7 @@
 
 
   <!-- NAVIGATION BAR (TO THE LEFT) -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-{{data.pageNavColorTheme}} fixed-top" id="sideNav">
 
      <!-- IMAGE SECTION -->
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -10,14 +10,14 @@
       <span class="d-block d-lg-none"></span>
        <!-- IMAGE -->
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/ExperisAcademy_Helene.jpg" alt="">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/{{data.picture}}" alt="">
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-     <!-- NAVB BAR "links" -->
+     <!-- NAVB BAR (LEFT) "links" -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -31,6 +31,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#engagements">Engagements</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
@@ -48,54 +51,22 @@
      <!-- FRONT/FIRST INFO -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
-        <h1 class="mb-0">{{data.firstName}}
-          <span class="text-primary">{{data.lastName}}</span>
-        </h1>
-        <div class="subheading mb-5">{{data.address.streetAddress}}, {{data.address.postNumber}} {{data.address.city}} · {{data.contactNumber}}
-          <br>
-          <a href="mailto:{{data.e-mail}}">{{data.e-mail}}</a>
+
+        <h1 class="mb-0">{{data.firstName}} <span class="txt-{{data.pageTextColorTheme}}">{{data.lastName}}</span></h1>
+        <div class="subheading mb-5">
+          {{data.dob}} · {{data.address.streetAddress}}, {{data.address.postNumber}} {{data.address.city}} · 
+          {{data.contactNumber}} · <a href="mailto:{{data.e-mail}}" class="a-{{data.pageLinkColorTheme}}">{{data.e-mail}}</a>
         </div>
+        
         <p class="lead mb-5">{{data.headline}}</p>
 
-        <div class="social-icons">
-
-          {{#if data.developerProfiles.linkedin}}
-            <a href="{{#each data.developerProfiles.github}} {{ this.link }} {{/each}}">
-              <i class="fab fa-linkedin-in"></i>
+        {{#each data.developerProfiles}}
+        <div class="social-icons-{{../data.pageIconColorTheme}}" style="display: inline" >
+            <a title="{{name}}" href="{{link}}">
+              <i class="{{icon}}"></i>
             </a>
-          {{/if}}
-          {{#if data.developerProfiles.github}}
-            <a href="{{#each data.developerProfiles.linkedin}} {{ this.link }} {{/each}}">
-              <i class="fab fa-github"></i>
-            </a>
-          {{/if}}
-
-          {{#if data.developerProfiles.imdb}}
-            <a href="{{#each data.developerProfiles.imdb}} {{ this.link }} {{/each}}">
-              <i class="fab fa-imdb"></i>
-            </a>
-          {{/if}}
-
-          {{#if data.developerProfiles.vimeo}}
-            <a href="{{#each data.developerProfiles.vimeo}} {{ this.link }} {{/each}}">
-              <i class="fab fa-vimeo"></i>
-            </a>
-          {{/if}}
-
-          {{#if data.developerProfiles.youtube}}
-            <a href="{{#each data.developerProfiles.youtube}} {{ this.link }} {{/each}}">
-              <i class="fab fa-youtube"></i>
-            </a>
-          {{/if}}
-          
-          {{#if data.developerProfiles.homepage}}
-            <a href="{{#each data.developerProfiles.homepage}} {{ this.link }} {{/each}}">
-              <i class="fab fa-ad"></i>
-            </a>
-          {{/if}}
-
         </div>
-      
+        {{/each}}
 
       </div>
     </section>
@@ -117,7 +88,7 @@
       <div class="w-100">
         <h2 class="mb-5">Experience</h2>
         
-        {{#each data.workExperience}}
+        {{#each data.experience}}
           <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="resume-content">
               <h3 class="mb-0">{{role}}</h3>
@@ -125,7 +96,8 @@
               <p>{{information}}</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">{{startDate}} - {{endDate}} </span>
+              <span class="txt-{{../data.pageTextColorTheme}}">{{startDate}} - {{endDate}} </span>
+              <p style="font-size: 0.8em">{{type}}</p>
             </div>
           </div>
         {{/each}}
@@ -148,8 +120,32 @@
               <div>{{information}}</div>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">
-                <p>{{startDate}} - {{endDate}}</p></span>
+              <span class="txt-{{../data.pageTextColorTheme}}">{{startDate}} - {{endDate}}</span>
+              <p style="font-size: 0.8em">{{level}}</p>
+            </div>
+          </div>
+        {{/each}}
+
+      </div>
+    </section>
+
+    <!-- OTHER ENGAGEMENTS -->
+    <hr class="m-0">
+    
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="engagements">
+      <div class="w-100">
+        <h2 class="mb-5">Other Engagements</h2>
+
+        {{#each data.otherEngagements}}
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+              <h3 class="mb-0">{{role}}</h3>
+              <div class="subheading mb-3">{{organization}}</div>
+              <p>{{information}}</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="txt-{{../data.pageTextColorTheme}}">{{startDate}} - {{endDate}} </span>
+              <p style="font-size: 0.8em">{{type}}</p>
             </div>
           </div>
         {{/each}}
@@ -165,81 +161,42 @@
         <h2 class="mb-5">Skills</h2>
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-angular"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-react"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-node-js"></i>
-          </li>
-          <!--
-          <li class="list-inline-item">
-            <i class="fab fa-sass"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-less"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-wordpress"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-gulp"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-grunt"></i>
-          </li>
-          -->
-          <li class="list-inline-item">
-            <i class="fab fa-npm"></i>
-          </li>
+        {{#each data.tools}}
+        <ul style="display: inline" class="list-inline dev-icons-{{../data.pageIconColorTheme}}">
+            <li style="display: inline" class="list-inline-item-{{../data.pageIconColorTheme}}"><i title="{{name}}" class="{{icon}}"></i></li>
         </ul>
-
+        {{/each}}
+        <div><br></div>
         <div class="subheading mb-3">Key Qualifications</div>
-        <!--
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
-        </ul>
-        -->
-        <p>{{data.qualifications}}</p>
+        <p>{{data.keyQualifications}}</p>
+
+        <br>
+        <div class="subheading mb-3">Other Qualifications</div>
+        <p>{{data.otherQualifications}}</p>
+
+        <br>
+        <div class="subheading mb-3">Languages</div>
+        {{#each data.languages}}
+        <p>{{language}}: {{proficiency}}</p>
+        {{/each}}
+        
       </div>
+      
     </section>
 
-    <!-- AWARDS -->
+    <!-- CERTIFICATIONS & AWARDS -->
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
       <div class="w-100">
         <h2 class="mb-5">Awards &amp; Certifications</h2>
         <ul class="fa-ul mb-0">
-          {{#each data.certifications}}
+          {{#each data.certificationsAndAwards}}
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              {{name}}
+              {{type}}: {{name}}  <p style="font-size: 0.7em">{{organizer}} - <i>({{completed}})</i> - {{date}} </p>
             </li>
+            
           {{/each}}
         </ul>
       </div>
